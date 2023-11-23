@@ -2,7 +2,8 @@
         {:git/sha "ebf409f10edb2be9f85b812d864c116a22153071"}}
  :tasks
  {:requires ([quickblog.cli :as cli])
-  :init (def opts {:blog-author "Anders Eknert"
+  :init (def opts {:about-link "https://github.com/anderseknert"
+                   :blog-author "Anders Eknert"
                    :blog-title "All Things Anders"
                    :blog-description "Code, life and annoyances"
                    :favicon true})

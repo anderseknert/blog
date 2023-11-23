@@ -27,6 +27,8 @@ h2 {
 
 p {
   margin-top: 0.2em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .site-header {
@@ -69,10 +71,4 @@ ul.index {
 
 code {
   white-space: pre;
-}
-
-.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }

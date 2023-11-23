@@ -1,0 +1,13 @@
+{:deps {io.github.borkdude/quickblog
+        {:git/sha "ebf409f10edb2be9f85b812d864c116a22153071"}}
+ :tasks
+ {:requires ([quickblog.cli :as cli])
+  :init (def opts {:blog-author "Anders Eknert"
+                   :blog-title "All Things Anders"
+                   :blog-description "Code, life and annoyances"
+                   :favicon true})
+  quickblog {:doc "Start blogging quickly! Run `bb quickblog help` for details."
+             :task (cli/dispatch opts)}
+
+  favicon {:doc "Copy favicon directory to public root."
+           :task (babashka.fs/copy-tree "assets/favicon" "public")}}}

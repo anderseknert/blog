@@ -14,13 +14,10 @@
 -->
 {% if tags %}
 <p>
-  <i>
-  Tagged:
   {% for tag in tags %}
   <span class="tag">
     <a href="tags/{{tag|escape-tag}}.html">{{tag}}</a>
   </span>
   {% endfor %}
-  </i>
 </p>
 {% endif %}

@@ -4,6 +4,7 @@
  {:requires ([quickblog.cli :as cli])
   :init (def opts {:about-link "https://github.com/anderseknert"
                    :blog-author "Anders Eknert"
+                   :blog-root "https://www.eknert.com/blog"
                    :blog-title "Anders Means Different"
                    :blog-description "On life, open source and my many annoyances"
                    :favicon true})

@@ -46,6 +46,7 @@ p {
 .site-nav {
   float: right;
   line-height: 4rem;
+  font-size: 22px;
 }
 
 .site-nav .page-link:not(:last-child) {

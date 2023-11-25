@@ -6,10 +6,10 @@
                    :blog-author "Anders Eknert"
                    :blog-root "https://www.eknert.com/blog"
                    :blog-title "Anders Means Different"
-                   :blog-description "On life, open source and my many annoyances"
-                   :favicon true})
-  quickblog {:doc "Start blogging quickly! Run `bb quickblog help` for details."
-             :task (cli/dispatch opts)}
+                   :blog-description "On life, open source and the many things that annoy me"
+                   :favicon true
+                   :num-index-posts 10
+                   :skip-archive true})
 
-  favicon {:doc "Copy favicon directory to public root."
-           :task (babashka.fs/copy-tree "assets/favicon" "public")}}}
+  quickblog {:doc "Start blogging quickly! Run `bb quickblog help` for details."
+             :task (cli/dispatch opts)}}}

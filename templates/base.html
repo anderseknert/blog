@@ -11,6 +11,9 @@
     {{watch | safe }}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css">
 
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Open Sans">
+
+
     <link href="{{blog-root}}/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="{{blog-root}}/assets/fontawesome/css/brands.css" rel="stylesheet">
     <link href="{{blog-root}}/assets/fontawesome/css/solid.css" rel="stylesheet">
@@ -51,10 +54,10 @@
     <div class="site-header">
       <div class="wrapper">
         <div class="site-nav">
-          <a class="page-link" href="{{relative-path | safe}}archive.html">
+          <a class="page-link" href="{{relative-path}}archive">
             <i class="fa-solid fa-box-archive"></i>
           </a>
-          <a class="page-link" href="{{relative-path | safe}}tags/index.html">
+          <a class="page-link" href="{{relative-path | safe}}tags">
             <i class="fa-solid fa-tags"></i>
           </a>
           <!--<a class="page-link" href="{{discuss-link}}">Discuss</a>-->
@@ -72,9 +75,9 @@
 	  {% endif %}
         </div>
         <div>
-          <h1 class="site-title">
-            <a class="page-link" href="{{relative-path | safe}}index.html">{{blog-title}}</a>
-          </h1>
+          <h2 class="site-title">
+            <a class="page-link" href="{{relative-path | safe}}">{{blog-title}}</a>
+          </h2>
 	  <p>{{blog-description}}</p>
         </div>
       </div>
@@ -84,11 +87,7 @@
 
       {{body | safe }}
 
-      {% if not skip-archive %}
-      <div style="margin-bottom: 20px; float: right;">
-        <a class="page-link" href="{{relative-path | safe}}archive.html">Archive</a>
-      </div>
-      {% endif %}
+      <div style="margin-bottom: 20px; float: right;"></div>
     </div>
   </body>
 </html>

@@ -1,5 +1,9 @@
-{:deps {io.github.borkdude/quickblog
-        {:git/sha "ebf409f10edb2be9f85b812d864c116a22153071"}}
+{:deps {io.github.borkdude/quickblog {:git/sha "ebf409f10edb2be9f85b812d864c116a22153071"}
+        ; TODO: Remove this to use the version shipped with quickblog once a release including
+        ; https://github.com/babashka/http-server/pull/10 is made available
+        org.babashka/http-server     {:git/url "https://github.com/babashka/http-server"
+                                      :sha "c8f061a9ad12f0381981e280266846117295154e"}}
+
  :tasks
  {:requires ([quickblog.cli :as cli])
   :init (def opts {:about-link "https://github.com/anderseknert"
@@ -11,5 +15,10 @@
                    :num-index-posts 10
                    :skip-archive true})
 
-  quickblog {:doc "Start blogging quickly! Run `bb quickblog help` for details."
-             :task (cli/dispatch opts)}}}
+  quickblog
+  {:doc "Start blogging quickly! Run `bb quickblog help` for details."
+   :task (cli/dispatch opts)}
+
+  print-classpath
+  {:doc "Copy static assets to public folder"
+   :task (run! println (babashka.classpath/split-classpath (babashka.classpath/get-classpath)))}}}

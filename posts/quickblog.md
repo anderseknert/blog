@@ -58,3 +58,6 @@ jobs:
 ```
 
 Could be that caching could speed up the process in case I ever have hundreds of posts at some point, but let's worry about that later. One thing I'm noticing now though is the missing syntax highlighting for the YAML block above. Unsurprisingly, that works for Clojure, but I've not tried other languages. Will definitely want support for [Rego](https://www.openpolicyagent.org/docs/latest/policy-language/) too later. Oh well, just to tinker a _little_ more...
+
+**Update: 2023-11-27**
+Syntax highlighting fixed. Turned out to be rather simple to simply pick whatever languages one would [want](https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript). Also now included in local distribution rather than fetched from CDN.

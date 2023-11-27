@@ -1,4 +1,4 @@
-{:deps {io.github.borkdude/quickblog {:git/sha "ebf409f10edb2be9f85b812d864c116a22153071"}
+{:deps {io.github.borkdude/quickblog {:git/sha "9841b9001b9d8a663d45b29ae301aeb1de42c124"}
         ; TODO: Remove this to use the version shipped with quickblog once a release including
         ; https://github.com/babashka/http-server/pull/10 is made available
         org.babashka/http-server     {:git/url "https://github.com/babashka/http-server"
@@ -13,6 +13,7 @@
                    :blog-description "On life, open source and the many things that annoy me"
                    :favicon true
                    :num-index-posts 10
+                   :page-suffix ""
                    :skip-archive true})
 
   quickblog
@@ -20,5 +21,5 @@
    :task (cli/dispatch opts)}
 
   print-classpath
-  {:doc "Copy static assets to public folder"
+  {:doc "Print the classpath for debugging purposes."
    :task (run! println (babashka.classpath/split-classpath (babashka.classpath/get-classpath)))}}}

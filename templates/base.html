@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="application/atom+xml" rel="alternate" href="{{relative-path | safe}}atom.xml" title="{{title}}">
     <link rel="stylesheet" href="{{relative-path | safe}}style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-clojure.min.js"></script>
+    <script src="{{relative-path | safe}}assets/js/prism.js"></script>
     {{watch | safe }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css">
+    <link rel="stylesheet" href="{{relative-path | safe}}assets/css/prism.css">
 
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Open Sans">
 
 
-    <link href="{{blog-root}}/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="{{blog-root}}/assets/fontawesome/css/brands.css" rel="stylesheet">
-    <link href="{{blog-root}}/assets/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="{{relative-path | safe}}assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="{{relative-path | safe}}assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="{{relative-path | safe}}assets/fontawesome/css/solid.css" rel="stylesheet">
 
 {% if favicon-tags %}{{favicon-tags | safe}}{% endif %}
 

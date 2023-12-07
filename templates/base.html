@@ -3,6 +3,7 @@
   <head>
     <title>{{title}}</title>
     <meta charset="utf-8"/>
+    <link rel="canonical" href="{{sharing.url}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="application/atom+xml" rel="alternate" href="{{relative-path | safe}}atom.xml" title="{{title}}">
     <link rel="stylesheet" href="{{relative-path | safe}}style.css">
@@ -10,8 +11,7 @@
     {{watch | safe }}
     <link rel="stylesheet" href="{{relative-path | safe}}assets/css/prism.css">
 
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Open Sans">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 
     <link href="{{relative-path | safe}}assets/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="{{relative-path | safe}}assets/fontawesome/css/brands.css" rel="stylesheet">

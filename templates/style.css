@@ -21,7 +21,8 @@ h2 {
 }
 
 a {
-  color: rgb(51, 65, 85)
+  color: rgb(51, 65, 85);
+  font-weight: bold;
 }
 
 .wrapper {
@@ -82,7 +83,7 @@ code {
 code:not([class^="language"]) {
   background-color: #f5f2f0;
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 2px 4px;
 }
 
 .tag {

@@ -1,4 +1,5 @@
 {:deps {io.github.borkdude/quickblog {:git/sha "9841b9001b9d8a663d45b29ae301aeb1de42c124"}
+        ;{:local/root "../quickblog"}
         ; TODO: Remove this to use the version shipped with quickblog once a release including
         ; https://github.com/babashka/http-server/pull/10 is made available
         org.babashka/http-server     {:git/url "https://github.com/babashka/http-server"

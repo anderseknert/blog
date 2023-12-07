@@ -1,6 +1,6 @@
 Title: Quickblog
 Date: 2023-11-27
-Tags: clojure,meta,quickblog
+Tags: clojure, meta, quickblog
 
 While the [bronchitis](bronchitis) is still keeping me from working for any longer periods of time — and two kids claiming much of the little time I've got to spare — I've found at least a few free moments for getting started on this blog. A few attempts to run a blog have been made in the past, but most often I've gotten stuck in the technical details of the blog platform itself. While I do like to tinker, it's an easy trap to fall into, spending way too much time getting things just the way you want them, and then grow tired of it all before you even get to the actual writing. Perfect is the enemy of good, and all that.
 
